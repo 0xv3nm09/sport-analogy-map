@@ -1,0 +1,35 @@
+{
+  "source_sport": "cricket",
+  "sport": "american_football",
+  "entries": [
+    {
+      "moment_type": "tie_last_ball",
+      "sport": "american_football",
+      "like": "a field goal as time expires that ties the game",
+      "except": "cricket settles it with a one-over shootout: the Super Over",
+      "numbers_in_text": [],
+      "sub_concepts": {"clock": "balls left", "tie": "Super Over"},
+      "reviewed_by": []
+    },
+    {
+      "moment_type": "need_more_than_max",
+      "sport": "american_football",
+      "like": "down 8 with one snap left: the best play only ties",
+      "except": "you also need the 2-point conversion just to tie",
+      "numbers_in_text": [8, 2],
+      "sub_concepts": {"clock": "balls left", "scoring unit": "runs off one ball"},
+      "reviewed_by": []
+    },
+    {
+      "moment_type": "wide",
+      "sport": "american_football",
+      "like": "a defensive penalty: free yards, and the down is replayed",
+      "except": "the run counts on the scoreboard, and the ball is bowled again",
+      "numbers_in_text": [],
+      "sub_concepts": {"penalty": "wide", "replay of the down": "the ball is bowled again"},
+      "reviewed_by": []
+    }
+  ],
+  "_remaining_moment_types": ["boundary_four", "boundary_six", "no_ball", "wicket_caught", "wicket_bowled", "run_out", "super_over_start", "over_complete"],
+  "_note": "Entries with empty reviewed_by are drafts from the product spec's dry runs. They go live only after a fan of the sport reviews them (M2). Kept short so fact + like + except stays under 40 words."
+}

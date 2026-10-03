@@ -1,0 +1,26 @@
+{
+  "source_sport": "cricket",
+  "sport": "baseball",
+  "entries": [
+    {
+      "moment_type": "wicket_caught",
+      "sport": "baseball",
+      "like": "a fly ball caught in the outfield",
+      "except": "that out ends the batter's whole game: no next at-bat",
+      "numbers_in_text": [],
+      "sub_concepts": {"out": "strikeout", "turn": "inning"},
+      "reviewed_by": []
+    },
+    {
+      "moment_type": "need_more_than_max",
+      "sport": "baseball",
+      "like": "down 4 with one swing left: even a grand slam only ties it",
+      "except": "cricket's best is a six, and that only ties",
+      "numbers_in_text": [4],
+      "sub_concepts": {"clock": "balls left", "scoring unit": "runs off one ball"},
+      "reviewed_by": []
+    }
+  ],
+  "_remaining_moment_types": ["boundary_four", "boundary_six", "wide", "no_ball", "wicket_bowled", "run_out", "tie_last_ball", "super_over_start", "over_complete"],
+  "_note": "The need_more_than_max entry is the corrected draft (a six ties, so 'down 4', not 'down 5'). Drafts until a baseball fan reviews them (M2)."
+}

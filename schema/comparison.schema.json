@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sport analogy map entry",
+  "description": "One reviewed 'Like X, except Y' comparison between a cricket moment and a home sport.",
+  "type": "object",
+  "properties": {
+    "moment_type": {
+      "enum": ["boundary_four", "boundary_six", "wide", "no_ball", "wicket_caught",
+               "wicket_bowled", "run_out", "tie_last_ball", "super_over_start",
+               "need_more_than_max", "over_complete"]
+    },
+    "sport": {
+      "enum": ["american_football", "baseball", "basketball", "soccer"]
+    },
+    "like": {"type": "string", "minLength": 1},
+    "except": {"type": "string", "minLength": 1},
+    "numbers_in_text": {
+      "type": "array",
+      "items": {"type": "integer"},
+      "description": "Every number that appears in like/except text, so the validator can allow them."
+    },
+    "sub_concepts": {
+      "type": "object",
+      "additionalProperties": {"type": "string"}
+    },
+    "reviewed_by": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Reviewers who approved this entry. Empty means draft: never served as reviewed."
+    }
+  },
+  "required": ["moment_type", "sport", "like", "except", "reviewed_by"],
+  "additionalProperties": false
+}

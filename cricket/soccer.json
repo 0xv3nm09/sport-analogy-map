@@ -1,0 +1,17 @@
+{
+  "source_sport": "cricket",
+  "sport": "soccer",
+  "entries": [
+    {
+      "moment_type": "need_more_than_max",
+      "sport": "soccer",
+      "like": "a goal down with the last kick: even a goal only ties it",
+      "except": "cricket's best is a six, and that only ties",
+      "numbers_in_text": [],
+      "sub_concepts": {"clock": "balls left", "scoring unit": "runs off one ball"},
+      "reviewed_by": []
+    }
+  ],
+  "_remaining_moment_types": ["boundary_four", "boundary_six", "wide", "no_ball", "wicket_caught", "wicket_bowled", "run_out", "tie_last_ball", "super_over_start", "over_complete"],
+  "_note": "The need_more_than_max entry is the corrected draft (a six ties, so 'a goal down', not 'two goals'). Drafts until a soccer fan reviews them (M2)."
+}
